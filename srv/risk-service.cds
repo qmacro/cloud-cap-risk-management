@@ -6,5 +6,4 @@ service RiskService {
     annotate Risks with @odata.draft.enabled;
   entity Mitigations as projection on my.Mitigations;
     annotate Mitigations with @odata.draft.enabled;
-  //entity BusinessPartners as projection on my.BusinessPartners;
 }
