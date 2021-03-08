@@ -5,7 +5,6 @@ annotate RiskService.Risks with {
 	prio        @title: 'Priority';
 	descr       @title: 'Description';
 	miti        @title: 'Mitigation';
-	//bp          @title: 'Business Partner';
 	impact      @title: 'Impact';
 }
 
@@ -32,7 +31,6 @@ annotate RiskService.Risks with @(
 		LineItem: [
 			{Value: title},
 			{Value: miti_ID},
-			// {Value: bp_BusinessPartner},
 			{
 				Value: prio,
 				Criticality: criticality
