@@ -21,8 +21,6 @@ mta_archives/
 *.orig
 *.log
 
-# Source folder of SAP Fiori Tools generated project
-app/risks/src
 *.iml
 *.flattened-pom.xml
 
