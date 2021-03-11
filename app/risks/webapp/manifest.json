@@ -1,5 +1,5 @@
 {
-    "_version": "1.15.0",
+    "_version": "",
     "sap.app": {
         "id": "ns.risks",
         "type": "application",
@@ -9,7 +9,6 @@
         },
         "title": "{{appTitle}}",
         "description": "{{appDescription}}",
-        "ach": "CA-UI5-FE",
         "dataSources": {
             "mainService": {
                 "uri": "/service/risk/",
@@ -48,10 +47,10 @@
             "css": []
         },
         "dependencies": {
-            "minUI5Version": "",
+            "minUI5Version": "1.76.0",
             "libs": {
-                "sap.fe.templates": {},
-                "sap.ui.fl": {}
+                "sap.ui.core": {},
+                "sap.fe.templates": {}
             }
         },
         "models": {
@@ -61,6 +60,7 @@
             },
             "": {
                 "dataSource": "mainService",
+                "preload": true,
                 "settings": {
                     "synchronizationMode": "None",
                     "operationMode": "Server",
@@ -72,12 +72,12 @@
         "routing": {
             "routes": [
                 {
-                    "pattern": "",
+                    "pattern": ":?query:",
                     "name": "RisksList",
                     "target": "RisksList"
                 },
                 {
-                    "pattern": "Risks({key})",
+                    "pattern": "Risks({key}):?query:",
                     "name": "RisksObjectPage",
                     "target": "RisksObjectPage"
                 }

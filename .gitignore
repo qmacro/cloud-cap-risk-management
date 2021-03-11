@@ -2,6 +2,7 @@
 _out
 *.db
 connection.properties
+default-*.json
 gen/
 node_modules/
 target/
@@ -19,9 +20,6 @@ mta_archives/
 .DS_Store
 *.orig
 *.log
-
-# added by cds deploy
-default-env.json
 
 # Source folder of SAP Fiori Tools generated project
 app/risks/src
