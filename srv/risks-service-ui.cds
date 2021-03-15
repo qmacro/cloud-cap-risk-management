@@ -52,7 +52,6 @@ annotate RiskService.Risks with @(
 					Value: prio,
 					Criticality: criticality
 				},
-				// {Value: bp_BusinessPartner},
 				{
 					Value: impact,
 					Criticality: criticality
