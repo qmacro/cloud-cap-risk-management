@@ -81,7 +81,6 @@ annotate RiskService.Risks with {
 					}
 				]
 			}
-		},
-		UI.MultiLineText: IsActiveEntity
+		}
 	);
 }
