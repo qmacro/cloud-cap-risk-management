@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "^4",
+    "@sap/cds": "^5",
     "@sap/xsenv": "^3.0.0",
     "@sap/xssec": "^3.0.9",
     "express": "^4",
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@sap/ux-specification": "^1.84.4",
-    "sqlite3": "^5"
+    "sqlite3": "^5.0.2"
   },
   "scripts": {
     "start": "cds run"
@@ -23,6 +23,31 @@
   "sapux": [
     "app/risks"
   ],
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "es2020": true,
+      "node": true,
+      "jest": true,
+      "mocha": true
+    },
+    "globals": {
+      "SELECT": true,
+      "INSERT": true,
+      "UPDATE": true,
+      "DELETE": true,
+      "CREATE": true,
+      "DROP": true,
+      "CDL": true,
+      "CQL": true,
+      "CXL": true,
+      "cds": true
+    },
+    "rules": {
+      "no-console": "off",
+      "require-atomic-updates": "off"
+    }
+  },
   "cds": {
     "requires": {
       "db": {
