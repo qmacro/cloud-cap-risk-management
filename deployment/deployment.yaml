@@ -25,4 +25,4 @@ spec:
           - containerPort: 4004
         envFrom:
           - secretRef:
-              name: cpapp-kyma-hdi-secret
+              name: cpapp-kyma-db-secret
